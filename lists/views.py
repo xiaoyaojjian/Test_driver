@@ -7,5 +7,4 @@ from django.template.loader import render_to_string
 
 def home_page(request):
     item = request.POST.get('item')
-    print(item)
     return render(request, 'home.html')
